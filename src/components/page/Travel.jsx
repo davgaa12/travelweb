@@ -9,10 +9,7 @@ export const Travel = () => {
   return (
     <div className="flex justify-center pb-20">
       <div className="flex flex-col  ">
-        <div
-          className="flex justify-center pt-4 md:text-[24px] md:font-semibold font-bold pb-4
-        "
-        >
+        <div className="flex justify-center pt-4 md:text-[24px] md:font-semibold font-bold pb-4 ">
           Таны нандин дурсамжийг бүтээх аяллууд
         </div>
         <div className=" w-full flex flex-col gap-10 flex-wrap">

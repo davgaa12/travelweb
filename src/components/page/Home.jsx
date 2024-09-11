@@ -5,6 +5,7 @@ import { BejinTsagaanHerem } from "./aylal/BejinTsagaanHerem";
 import { Haninan } from "./aylal/Hainan";
 import { Huhhot } from "./aylal/Huhhot";
 import { Manjuur } from "./aylal/Manjuur";
+import Link from "next/link";
 
 export const Home = () => {
   return (
@@ -19,12 +20,18 @@ export const Home = () => {
               <Menu />
             </div>
             <div className="md:flex items-center md:gap-5 gap-3 hidden">
-              <div className="text-[#FFFFFF] md:text-[20px] text-[10px] font-medium hover:text-black  ">
+              <Link
+                href={"/"}
+                className="text-[#FFFFFF] md:text-[20px] text-[10px] font-medium hover:text-black"
+              >
                 Hүүр хуудас
-              </div>
-              <div className="text-[#FFFFFF] md:text-[20px] text-[10px] font-medium  hover:text-black">
+              </Link>
+              <Link
+                href={"/travel"}
+                className="text-[#FFFFFF] md:text-[20px] text-[10px] font-medium  hover:text-black"
+              >
                 Аяллууд
-              </div>
+              </Link>
               <div className="text-[#FFFFFF] md:text-[20px] text-[10px] font-medium hover:text-black">
                 Бидний тухай
               </div>
@@ -42,10 +49,13 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pt-8 md:text-[24px] md:font-semibold font-bold
-        ">Таны нандин дурсамжийг бүтээх аяллууд</div>
+        <div
+          className="flex justify-center pt-8 md:text-[24px] md:font-semibold font-bold
+        "
+        >
+          Таны нандин дурсамжийг бүтээх аяллууд
+        </div>
         <div className="flex justify-center  pt-11">
-          
           <div className=" w-full flex flex-col gap-10 flex-wrap">
             <div className="flex gap-10  justify-center flex-wrap">
               <Haninan />
