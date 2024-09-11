@@ -1,3 +1,4 @@
+import { Menu } from "../icons/Menu";
 import { Avaatar } from "./aylal/Avaatar";
 import { Bejin } from "./aylal/Bejin";
 import { BejinTsagaanHerem } from "./aylal/BejinTsagaanHerem";
@@ -7,12 +8,15 @@ import { Manjuur } from "./aylal/Manjuur";
 
 export const Home = () => {
   return (
-    <div className="md:flex md:justify-center md:pb-20 pb-9">
+    <div className="md:flex md:justify-center ">
       <div className="md:flex md:flex-col  ">
-        <div className="bg-[url('/webbg.png')] w-full md:h-[600px]  h-[240px]   bg-cover ">
-          <div className=" flex md:pl-16 pl-[7px]  md:pt-8 pt-[3px] md:gap-96 gap-32 items-center">
+        <div className="bg-[url('/webbg.png')]   md:w-[1025px] md:h-[600px] h-[290px]  bg-cover ">
+          <div className=" flex md:pl-16 pl-[7px]  md:pt-8 pt-[3px] md:gap-96 justify-between px-4 items-center">
             <div className="text-[#FFFFFF] md:text-[28px] text-[16px] font-semibold">
               GoGo Travel
+            </div>
+            <div className="md:hidden">
+              <Menu />
             </div>
             <div className="md:flex items-center md:gap-5 gap-3 hidden">
               <div className="text-[#FFFFFF] md:text-[20px] text-[10px] font-medium hover:text-black  ">
@@ -38,17 +42,20 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center pt-8 md:text-[24px] md:font-semibold font-bold
+        ">Таны нандин дурсамжийг бүтээх аяллууд</div>
+        <div className="flex justify-center  pt-11">
+          
           <div className=" w-full flex flex-col gap-10 flex-wrap">
             <div className="flex gap-10  justify-center flex-wrap">
               <Haninan />
               <Avaatar />
             </div>
-            <div className="flex gap-10  flex-wrap">
+            <div className="flex gap-10  justify-center flex-wrap">
               <Bejin />
               <BejinTsagaanHerem />
             </div>
-            <div className="flex gap-10  flex-wrap">
+            <div className="flex gap-10 justify-center  flex-wrap pb-10">
               <Huhhot />
               <Manjuur />
             </div>
